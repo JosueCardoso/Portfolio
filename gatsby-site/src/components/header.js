@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import React from "react"
+import Language from "./language"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -25,8 +26,10 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          
         </Link>
       </h1>
+      <Language />
     </div>
   </header>
 )

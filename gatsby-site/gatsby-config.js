@@ -33,6 +33,19 @@ module.exports = {
         ignore: [`**styles.js`],
       },
     },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`pt`, `en`, `es`],
+        // language file path
+        defaultLanguage: `pt`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: false,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
