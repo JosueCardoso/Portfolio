@@ -43,7 +43,7 @@ module.exports = {
         // language file path
         defaultLanguage: `pt`,
         // option to redirect to `/ko` when connecting `/`
-        redirect: false,
+        redirect: true,
       },
     },
     `gatsby-transformer-sharp`,
