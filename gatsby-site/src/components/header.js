@@ -12,9 +12,11 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        display:'flex',
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: '100%',
         padding: `1.45rem 1.0875rem`,
+        justifyContent:'space-between',
       }}
     >
       <h1 style={{ margin: 0 }}>
