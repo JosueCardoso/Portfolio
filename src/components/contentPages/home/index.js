@@ -1,13 +1,38 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
-import { Container } from "./styles"
+import {
+  Container,
+  BarVerticalLeft,
+  BarVerticalRight,
+  LeftText,
+  RightText,
+  ContainerTextLeft,
+  ContainerTextRight,
+} from "./styles"
 
-const home = () => {
+import { injectIntl } from "gatsby-plugin-intl"
+
+const Home = ({ intl }) => {
+  
+  const [startEffect,setEffect] = useState(false);
+
+  useEffect(()=>{
+      setEffect(true)
+  },[])
+
   return (
     <Container>
-      <h1>Home</h1>
+      <ContainerTextLeft>
+        <LeftText startEffect={startEffect}>Josué Cardoso</LeftText>
+        <BarVerticalLeft />
+      </ContainerTextLeft>
+
+      <ContainerTextRight>
+        <BarVerticalRight />
+        <RightText startEffect={startEffect}>Software Developer</RightText>
+      </ContainerTextRight>
     </Container>
   )
 }
 
-export default home
+export default injectIntl(Home)

@@ -1,13 +1,14 @@
 import React from "react"
 
 import { Container } from "./styles"
+import { injectIntl } from "gatsby-plugin-intl"
 
-const about = () => {
+const about = ({intl}) => {
   return (
     <Container>
-      <h1>About</h1>
+      <h1>{intl.formatMessage({ id: "about-menu" })}</h1>
     </Container>
   )
 }
 
-export default about
+export default injectIntl(about)

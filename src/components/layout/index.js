@@ -22,9 +22,7 @@ const Layout = ({ children, intl }) => {
   return (
     <>
       <Header />
-      <Container>
-        <main>{children}</main>
-      </Container>
+      <Container>{children}</Container>
     </>
   )
 }
