@@ -6,7 +6,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 const projects = ({intl}) => {
   return (
     <Container>
-      <h1>{intl.formatMessage({ id: "project-menu" })}</h1>
+      <h1>{intl.formatMessage({ id: "projects-menu" })}</h1>
     </Container>
   )
 }
