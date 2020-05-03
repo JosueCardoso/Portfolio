@@ -24,7 +24,7 @@ const Home = ({ intl }) => {
   const [startEffect,setEffect] = useState(false);
 
   useEffect(()=>{
-      setEffect(true)
+    setEffect(true)
   },[])
 
   return (
